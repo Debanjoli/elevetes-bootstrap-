@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+a {
+  display: inline-block;
+}
+
+:root {
+  --primary-color: #940f14;
+  --secondary-color: #001f51;
+  --border-color: #b8b8b8;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px !important;
+}
+.offcanvas {
+  flex-direction: row !important;
+}
+
+/* Navbar Section */
+
+.navbar-brand {
+  width: 208.49px;
+}
+
+.navbar-brand > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-item {
+  margin-right: 35px;
+}
+
+.last-nav-item {
+  margin-right: 0;
+}
+
+.nav-btn {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.active {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  --bs-btn-padding-y: 18.5px !important;
+  --bs-btn-padding-x: 30.5px !important;
+  background: var(--secondary-color) !important;
+  border: none;
+}
+
+.btn-danger {
+  background: var(--primary-color);
+  border: none;
+  padding: 18.5px 36.5px;
+}
+
+.btn-primary:hover {
+  /* background: #0046b6 !important; */
+  background: white !important;
+  color: var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+}
+
+.text-blue {
+  color: var(--secondary-color) !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/***** Banner Section *****/
+
+.banner-section {
+  min-height: 100vh;
+  padding: 15px 0;
+  background: url("../assets/background.png") no-repeat center/cover;
+}
+
+.banner-hdr > .title1 {
+  font-size: 100px;
+  color: var(--secondary-color);
+}
+
+.banner-hdr > .title1 > span {
+  color: var(--primary-color) !important;
+}
+
+.userForm {
+  padding: 34px 39px 40px 19px;
+  border-radius: 20px;
+  max-width: 468px;
+}
+
+.form-hdr {
+  color: var(--secondary-color);
+  text-align: center;
+  max-width: 468px;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 47px;
+  font-family: "Inter", sans-serif;
+}
+
+.userForm > .btn-danger {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#userDesc {
+  height: 106px;
+  max-width: 410px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 13px 15px;
+}
+
+#userEmail,
+#userName,
+#userNum {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 13px 15px;
+}
+
+/* ----------------------about section------------------- */
+
+.about-section {
+  padding-top: 100px;
+}
+.about-img {
+  max-width: 568px;
+}
+.about-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* .about-content{
+  max-width: 539px;
+} */
+.about-hdr,
+.loan-product-hdr {
+  font-size: 50px;
+}
+.about-subhdr-content,
+.loan-product-subhdr {
+  font-size: 18px;
+}
+.about-btn {
+  margin-top: 37px;
+}
+
+/* -------loan product section---------------------------- */
+.loan-product-section {
+  background: #f3f3f3;
+  padding-block: 100px;
+  margin-top: 100px;
+}
+.loan-product-subhdr {
+  max-width: 777px;
+}
+.loan-card-section {
+  margin-top: 40px;
+}
+.card-img {
+  max-width: 340px;
+  min-height: 285px;
+}
+.card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card1 {
+  border-radius: 20px;
+  max-width: 370px;
+  min-height: 412px;
+}
+.card-content {
+  font-size: 23px;
+  color: var(--secondary-color);
+  padding: 0px 15px 40px 15px;
+}
+/* -------------------------------------- */
+
+.footer-section{
+  background: url("../assets/footer-img.png") no-repeat center/cover;
+  /* margin-top: 100px; */
+}
+.footer-logo{
+  margin-top: 50px;
+  max-width: 312px;
+}
+.footer-logo>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer-copyright{
+  margin-block: 40px 50px;
+}
+/* --------------------------------------------------------- */
+/***** Banner End Section *****/
+
+@media screen and (max-width: 1200px) {
+  .loan-card-section {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .offcanvas {
+    flex-direction: column !important;
+  }
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav-item,
+  .nav-btn {
+    margin: 0;
+  }
+
+  /* Banner Section */
+
+  .banner-hdr {
+    margin-bottom: 50px;
+  }
+
+  .form-hdr {
+    margin-bottom: 20px;
+  }
+
+  .userForm {
+    padding: 24px 19px;
+  }
+  #userDesc {
+    max-width: 100%;
+  }
+  .about-section > div > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ---------------------------------------------------- */
+
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    width: 150px;
+  }
+  .banner-hdr > .title1,
+  .about-hdr {
+    font-size: 40px;
+  }
+}
